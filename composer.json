@@ -1,12 +1,12 @@
 {
     "name": "story/lib",
     "description": "sb library",
-    "type": "lib",
+    "type": "libray",
     "license": "MIT",
     "authors": [
         {
             "name": "sb",
-            "email": "sales@storybloks.com"
+            "email": ""
         }
     ],
     "minimum-stability": "dev",

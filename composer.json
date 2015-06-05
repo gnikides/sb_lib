@@ -1,0 +1,14 @@
+{
+    "name": "root/sb_lib",
+    "description": "sb library",
+    "type": "lib",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sb",
+            "email": "sales@storybloks.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

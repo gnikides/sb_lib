@@ -1,5 +1,5 @@
 {
-    "name": "story/story",
+    "name": "story/lib",
     "description": "sb library",
     "type": "library",
     "license": "MIT",
@@ -10,5 +10,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "Story": "lib/"
+        }
+    },    
 }

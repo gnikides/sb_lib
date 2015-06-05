@@ -1,5 +1,7 @@
 <?php
 
+use Command;
+
 class Dir
 {
     /**
@@ -34,49 +36,6 @@ class Dir
         }    
         return $path;
     } 
-
-    /**
-     *  Make dirs recursively
-     * 
-     * @param    string    $dirToMake
-     * @return  mixed    string $dir on success, false on failure
-    */        
-    public static function makeDirs($dirToMake, $rootPath, $isWithinApp=false)
-    {
-        if (empty($dirToMake)) {
-            throw new Exception("No directory specified to make");
-        }    
-        //  check that dirmaking is within the application
-        if ((true == $isWithinApp) && substr($dirToMake, 0, strlen($rootPath)) != $rootPath) {
-        	throw new Exception("Directory path is outside the application");
-            
-        } else {
-
-            $docRoot = dirname($rootPath);           
-            $localPath = substr($dirToMake, strlen($docRoot));
-            $ay = explode('/', $localPath);
-            
-            if (is_array($ay)) {
-                $base = $docRoot;
-                foreach ($ay as $dir) {                    
-                    if (!empty($dir)) {
-                        $fullPath = $base . '/' . $dir;
-                        if (is_dir($fullPath)) {
-                            $base = $fullPath;
-                            continue;
-                        } else {    
-                            $base = self::make($fullPath);
-                        }                         
-                    }    
-                }
-            }    
-            clearstatcache(); 
-            if (is_dir($dirToMake) && is_writable($dirToMake)) {
-                return $dirToMake;
-            }
-        }
-        return false;
-    }
 
     /**
      * Check directory exists

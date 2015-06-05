@@ -1,5 +1,7 @@
 <?php
 
+use Crop;
+
 class Seo
 {   
 	private $troubleWords = array(

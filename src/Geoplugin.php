@@ -1,4 +1,6 @@
-<?php
+<?php namespace Geoplugin
+
+use Platform;
 
 class Geoplugin
 {  	
@@ -93,6 +95,6 @@ class Geoplugin
 		
 	public function getLongitude()
 	{
-		return $this->Longitude;
+		return $this->longitude;
 	}			
 }

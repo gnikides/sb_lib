@@ -1,5 +1,8 @@
 <?php
 
+use Dir;
+use Command;
+
 class File
 {    
     /**
@@ -34,11 +37,18 @@ class File
 				
 				if (fwrite($fp, $str)) {
 					
+                    $dir = dirname($file);
+
 					//  do some checking before renaming
 					if (file_exists($file)) {
 						self::delete($file);
-						
-					} elseif (!Dir::makeDirs(dirname($file))) {
+					
+                    } elseif (!file_exists($dir)) {
+                        exec(escapeshellcmd('mkdir ' . $dir));
+                        self::setPermissions('mkdir ' . $dir, 0777, true); 
+					}
+
+                    if (!file_exists($dir)) {
 						if ($fp) {
 							fclose($fp);
 						}                           

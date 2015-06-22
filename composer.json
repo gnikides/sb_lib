@@ -1,6 +1,6 @@
 {
-    "name": "story/lib",
-    "description": "sb library",
+    "name": "story/tools",
+    "description": "story library",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -13,7 +13,7 @@
     "require": {},
     "autoload": {
         "psr-0": {
-            "Story": "lib"
+            "Story": "src"
         }
     }    
 }

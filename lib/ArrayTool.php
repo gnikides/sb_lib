@@ -1,6 +1,6 @@
 <?php
 
-class Array
+class ArrayTool
 {
     /**
      * Count non-empty elements or properties in an array or object; return false if only empty elements

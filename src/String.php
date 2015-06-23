@@ -1,4 +1,4 @@
-<?php namespace String
+<?php namespace Story;
 
 class String
 {

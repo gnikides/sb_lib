@@ -1,4 +1,4 @@
-<?php namespace lib
+<?php namespace Story;
 
 class ArrayTool
 {

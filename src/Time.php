@@ -1,4 +1,7 @@
-<?php
+<?php namespace Story;
+
+use DateTime;
+use DateTimeZone;
 
 class Time
 {

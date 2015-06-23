@@ -1,4 +1,4 @@
-<?php namespace Geoplugin
+<?php namespace Story;
 
 use Platform;
 

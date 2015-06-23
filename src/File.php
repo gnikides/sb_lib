@@ -1,4 +1,4 @@
-<?php
+<?php namespace Story;
 
 use Dir;
 use Command;

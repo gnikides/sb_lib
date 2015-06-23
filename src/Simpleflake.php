@@ -1,4 +1,4 @@
-<?php
+<?php namespace Story;
 
 /**
  * SimpleFlake - Simple distributed ID generation

@@ -1,4 +1,4 @@
-<?php
+<?php namespace Story;
     
 class Utf8
 {       

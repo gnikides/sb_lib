@@ -2,7 +2,7 @@
 
 use Command;
 
-class Dir
+class DirTool
 {
     /**
     * @var array

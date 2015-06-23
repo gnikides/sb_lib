@@ -3,7 +3,7 @@
 use DateTime;
 use DateTimeZone;
 
-class Time
+class TimeTool
 {
     public $timezone = 'UTC';
 

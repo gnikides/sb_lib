@@ -3,7 +3,7 @@
 use Dir;
 use Command;
 
-class File
+class FileTool
 {    
     /**
      * Remove annoying BOM from files

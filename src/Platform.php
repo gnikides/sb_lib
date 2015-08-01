@@ -119,8 +119,8 @@ class Platform
         return false;
     }
 
-    // public static function isWebRequest()
-    // {
-    //     return ('web' == SB_ENTRY_POINT);     
-    // }             
+    public static function isCli()
+    {
+		return (php_sapi_name() == 'cli');  
+    }            
 }

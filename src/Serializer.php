@@ -1,6 +1,6 @@
 <?php namespace Story;
 
-class Serialize
+class Serializer
 {
     public static function isSerialized($data)
     {

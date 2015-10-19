@@ -68,10 +68,10 @@ class TimeTool
             foreach ($periods as $secs => $label) {
                 $period = floor($elapsedTime / $secs);  
                 if ($period > 1) {
-                    $str = $period . ' ' . Story::__($label . 's');
+                    $str = $period . ' ' . $label . 's';
                     break;
                 } elseif ($period == 1) {
-                    $str = $period . ' ' . Story::__($label);
+                    $str = $period . ' ' . $label;
                     break;              
                 }
             }
